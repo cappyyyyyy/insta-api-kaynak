@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT"
+issueTrackerURL="https://github.com/GoreCraftTeam/gorecraft/issues"
+
+[[mods]]
+modId="gorecraft"
+version="1.0.0"
+displayName="GoreCraft"
+displayURL="https://github.com/GoreCraftTeam/gorecraft"
+logoFile="gorecraft.png"
+credits="Minecraft Forge Community"
+authors="GoreCraft Team"
+description='''
+GoreCraft - Enhanced Minecraft Experience
+
+This mod adds new gameplay mechanics and features to enhance your Minecraft experience.
+Includes custom blocks, items, and unique gameplay elements designed for adventure seekers.
+
+Features:
+- Custom crafting recipes
+- New block types
+- Enhanced gameplay mechanics
+- Optimized performance
+'''
+
+[[dependencies.gorecraft]]
+modId="forge"
+mandatory=true
+versionRange="[40,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.gorecraft]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.2,1.19)"
+ordering="NONE"
+side="BOTH"
