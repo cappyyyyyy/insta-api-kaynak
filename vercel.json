@@ -1,16 +1,8 @@
 {
-  "version": 2,
-  "name": "gorecraft",
-  "builds": [
+  "rewrites": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!.*\\.(css|js|json|txt|ico|svg|png|jpg|jpeg|gif|webp)).*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
@@ -28,6 +20,15 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(css|js|json|txt|ico|svg|png|jpg|jpeg|gif|webp))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
