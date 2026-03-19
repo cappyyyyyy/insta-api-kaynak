@@ -1,0 +1,29 @@
+{
+  "name": "gorecraft",
+  "version": "1.0.0",
+  "description": "Gorecraft - Modern Minecraft Sunucusu Web Sitesi",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Build complete - static files ready for deployment'",
+    "preview": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "minecraft",
+    "gorecraft",
+    "gaming",
+    "server",
+    "website"
+  ],
+  "author": "Gorecraft Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gorecraft/gorecraft-website.git"
+  },
+  "homepage": "https://gorecraft.vercel.app",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorecraft - Minecraft Sunucusu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="brand-icon">⛏️</span>
+                <span class="brand-text">Gorecraft</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Ana Sayfa</a>
+                <a href="#features" class="nav-link">Özellikler</a>
+                <a href="#download" class="nav-link">İndir</a>
+                <a href="#contact" class="nav-link">İletişim</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Gorecraft</span>
+                    <br>
+                    <span class="subtitle">Efsanevi Minecraft Macerası</span>
+                </h1>
+                <p class="hero-description">
+                    Unutulmaz bir Minecraft deneyimi için hazır mısın? 
+                    Gorecraft'ta macera, arkadaşlık ve heyecan seni bekliyor!
+                </p>
+                <div class="hero-buttons">
+                    <button onclick="downloadGame()" class="btn btn-primary">
+                        <span class="btn-icon">⬇️</span>
+                        Gorecraft 2.0 İndir
+                    </button>
+                    <a href="#features" class="btn btn-secondary">
+                        <span class="btn-icon">🎮</span>
+                        Keşfet
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-blocks">
+                    <div class="block block-1">🟫</div>
+                    <div class="block block-2">🟩</div>
+                    <div class="block block-3">⛏️</div>
+                    <div class="block block-4">💎</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="section-header">
+                <h2 class="section-title">Neden Gorecraft?</h2>
+                <p class="section-subtitle">En iyi Minecraft deneyimi burada</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Özel Modlar</h3>
+                    <p>Benzersiz oyun modları ve sürekli güncellenen içeriklerle asla sıkılmayacaksın.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Aktif Topluluk</h3>
+                    <p>Binlerce oyuncuyla tanış, yeni arkadaşlar edin ve birlikte maceraya atıl.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Güvenli Sunucu</h3>
+                    <p>24/7 aktif, lag'sız ve güvenli sunucu ile kesintisiz oyun keyfi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Etkinlikler</h3>
+                    <p>Haftalık turnuvalar, özel etkinlikler ve değerli ödüller seni bekliyor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download">
+            <div class="download-content">
+                <h2 class="download-title">Gorecraft 2.0</h2>
+                <p class="download-description">
+                    En yeni sürümle maceraya başla! Geliştirilmiş grafikler, 
+                    yeni özellikler ve daha fazlası seni bekliyor.
+                </p>
+                <div class="download-info">
+                    <div class="info-item">
+                        <span class="info-label">Versiyon:</span>
+                        <span class="info-value">2.0.1</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Boyut:</span>
+                        <span class="info-value">125 MB</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Dil:</span>
+                        <span class="info-value">Türkçe</span>
+                    </div>
+                </div>
+                <button onclick="downloadGame()" class="btn btn-download">
+                    <span class="btn-icon">⬇️</span>
+                    Şimdi İndir
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Bize Ulaşın</h2>
+                <p class="contact-description">
+                    Soruların mı var? Bizimle iletişime geçmekten çekinme!
+                </p>
+                <div class="contact-links">
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon">💬</span>
+                        Discord
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        E-posta
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon">🐦</span>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">⛏️</span>
+                    <span class="brand-text">Gorecraft</span>
+                </div>
+                <p class="footer-text">© 2024 Gorecraft. Tüm hakları saklıdır.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
